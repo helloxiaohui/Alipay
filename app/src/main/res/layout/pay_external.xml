@@ -1,0 +1,62 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="12dp">
+
+        <Button
+            android:id="@+id/payV2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="payV2"
+            android:text="支付宝支付Demo"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/payStart"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="payStart"
+            android:text="开始支付"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/authV2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="authV2"
+            android:text="支付宝授权Demo"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/h5pay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="btnClear"
+            android:text="清空"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="参数提示：" />
+
+        <EditText
+            android:id="@+id/edInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="支付时的签名参数" />
+    </LinearLayout>
+
+</ScrollView>
